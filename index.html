@@ -8,12 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
 
-    <title>単語テスト</title>
+    <title>単語学習アプリ ボキャトレ</title>
 
     <!-- スタイルの読み込み -->
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./home.css">
-    <meta http-equiv="default-style" content="./home.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/module.css">
+    <link rel="stylesheet" href="./css/state.css">
+    <link rel="stylesheet" href="./css/theme-home.css">
+    <meta http-equiv="default-style" content="./css/theme-home.css">
 
     <!-- Android版Chromeなどで、URLバーの色を設定 -->
     <meta name="theme-color" content="#444444">
@@ -31,7 +34,7 @@
     <!-- OGP(SNSでの表示)関連の設定 -->
     <meta property="og:url" content="https://www.arcody.com/vocab/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="単語テスト">
+    <meta property="og:title" content="単語学習アプリ">
     <meta property="og:description" content="速単・ターゲット英熟語・古文単語の単語をクイズ形式で覚えることができる非公式のサイトです。
         4択クイズ、並び替え、キーボード入力などの様々な方法で、英語から日本語、日本語から英語、リスニングなど、様々なパターンでのテストが可能です。">
     <meta property="og:site_name" content="速単・ターゲット英熟語・古文単語の単語テスト">
@@ -39,7 +42,17 @@
 </head>
 
 <body>
-    <script src="./main.js"></script>
+    <header class="l-header header">
+        <img src="./images/icons/favicon.png" alt="アイコン" class="header__img">
+        <h1 class="l-header__title header__title">
+            <span class="header__subtitle">単語学習アプリ</span>
+            <span class="header__title">ボキャトレ</span>
+        </h1>
+    </header>
+
+    <p class="normal-text">学習する教材を選択してください。</p>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
