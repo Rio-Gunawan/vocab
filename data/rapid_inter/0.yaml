@@ -1,0 +1,63 @@
+1:
+  section: 1,
+  word: wolf,
+  meaning:
+    - - オオカミ
+      - 狼
+  parts:
+    - 名詞,
+  description: 複数形はwolves。
+  choices:
+    - 犬
+
+2:
+  section: 1,
+  word: bark,
+  meaning:
+    - - 吠える
+  parts:
+    - 自動詞
+  description: 犬などが吠える。
+  choices:
+    - 大声を出す
+    - 鳴く
+
+3:
+  section: 1,
+  word: nest,
+  meaning:
+    - - 巣
+  parts:
+    - 名詞
+  description: 鳥・昆虫などの巣。
+  choices: []
+
+4:
+  section: 1,
+  word: raise,
+  meaning:
+    - - を育てる
+      - を上げる
+      - を提起する
+      - を集める
+  parts:
+    - 他動詞
+  description: |
+    "raise one's hands"で「挙手をする」。自動詞のriseと混同しないようにする。
+  choices:
+    - 上がる
+
+5:
+  section: 1,
+  word: rear,
+  meaning:
+    - - を育てる
+    - - 後部
+    - - 後部の
+  parts:
+    - 他動詞
+    - 名詞
+    - 形容詞
+  description: |
+    人が、子供や動物を育てるという意味で用いる。また、名詞として使うときはtheが必要。
+  choices: []

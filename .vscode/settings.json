@@ -1,0 +1,5 @@
+{
+	"yaml.schemas": {
+		"https://json.schemastore.org/yamllint.json": "file:///workspaces/vocab/data/rapid_inter/0.yaml"
+	}
+}
