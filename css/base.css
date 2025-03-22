@@ -18,3 +18,9 @@ body {
     font-size: min(18px, 4vw);
     background-color: #eeeeee;
 }
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}

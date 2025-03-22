@@ -9,3 +9,45 @@
     background-color: var(--accent-color);
     color: white;
 }
+
+/* ----------------------
+主にトップページで使われる、画像を全面的に出したボタン
+----------------------- */
+
+.button-link.rapid_inter {
+    border: 3px solid var(--rapid-inter-theme);
+}
+
+.button-link.target_idioms {
+    border: 3px solid var(--target-idioms-theme);
+}
+
+.button-link.irregular_verbs {
+    border: 3px solid var(--irregular-verbs-theme);
+}
+
+.button-link.classical_japanese {
+    border: 3px solid var(--classical-japanese-theme);
+}
+
+/* ホバー機能があるデバイスの場合のみ、hoverスタイルを適用する */
+@media (hover: hover) {
+    .button-link.rapid_inter:hover {
+        background-color: var(--rapid-inter-theme);
+        color: white;
+    }
+
+    .button-link.target_idioms:hover {
+        background-color: var(--target-idioms-theme);
+    }
+
+    .button-link.irregular_verbs:hover {
+        background-color: var(--irregular-verbs-theme);
+        color: white;
+    }
+
+    .button-link.classical_japanese:hover {
+        background-color: var(--classical-japanese-theme);
+        color: white;
+    }
+}

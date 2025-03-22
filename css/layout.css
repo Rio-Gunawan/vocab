@@ -16,3 +16,20 @@
     flex-direction: column;
     justify-content: center;
 }
+
+/* ----------------------
+主にトップページで使われる、画像を全面的に出したボタン
+----------------------- */
+.l-button-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.l-button-link {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

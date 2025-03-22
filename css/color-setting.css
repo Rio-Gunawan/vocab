@@ -1,6 +1,12 @@
 :root {
     --accent-color: #6b6b6b;
-    --light-gray: #f6f6f6;
+    --light-gray: #f7f7f7;
     --background-color: #eeeeee;
     --text-color: #252525;
+    --light-gray-link-color: #d7d7d7;
+    /* 本ごとのテーマカラー */
+    --rapid-inter-theme: #003f8c;
+    --target-idioms-theme: #ffe401;
+    --irregular-verbs-theme: #f765a4;
+    --classical-japanese-theme: #b93854;
 }

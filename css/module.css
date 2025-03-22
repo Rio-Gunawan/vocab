@@ -33,7 +33,67 @@
     font-size: 1.2em;
 }
 
+/* ヘッダースタイルここまで */
+
+/* ----------------
+フッターのスタイル
+------------------- */
+
+.footer {
+    padding: 1em 5vw;
+    margin-top: 1em;
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+.footer__title {
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.footer__link {
+    color: var(--light-gray-link-color)
+}
+
+/* フッタースタイルここまで */
+
+/* ----------------------
+どのページにも使われる汎用スタイル
+------------------------*/
+
 .normal-text {
     margin: 0;
     padding: 0 1em;
+}
+
+.normal-h2 {
+    margin: 0.5em 0;
+    padding-left: 1em;
+}
+
+/* 汎用スタイルここまで */
+
+/* ----------------------
+主にトップページで使われる、画像を全面的に出したボタン
+----------------------- */
+
+.button-link {
+    margin: 1em;
+    padding: 1em;
+    color: black;
+    background-color: var(--light-gray);
+    text-decoration: none;
+    font-size: 0.8em;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.button-link img {
+    box-sizing: content-box;
+    width: 8em;
+    margin-bottom: 1em;
+    border: 1px solid white;
 }
