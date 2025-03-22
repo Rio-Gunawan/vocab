@@ -132,3 +132,5 @@ dist
 # その他
 package-lock.json
 package.json
+
+vocab_copy
