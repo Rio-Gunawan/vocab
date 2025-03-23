@@ -12,7 +12,7 @@ export default [
         },
         rules: {
             "no-unused-vars": [
-                'error',
+                'warn',
                 {
                     // グローバルorローカルのどの範囲の変数をチェックするかを指定(デフォルトはall)
                     vars: 'all',

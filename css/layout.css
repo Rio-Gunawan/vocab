@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.l-header__title {
+.l-header__title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

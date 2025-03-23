@@ -13,15 +13,21 @@
     padding: 0.8em;
 }
 
-.header__title {
+.header__title-container {
+    font-size: 1.2em;
     font-weight: 400;
+    margin: 0 0.5rem;
 }
 
 .header__img {
     box-sizing: content-box;
     width: 3.3em;
     flex-shrink: 0;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
+}
+
+.header__img-smaller {
+    width: 2.2em;
 }
 
 .header__subtitle {
@@ -74,6 +80,31 @@
     padding-left: 1em;
 }
 
+
+/* 本などの画像で、周りの白色の枠線で囲む */
+.white-border-img {
+    box-sizing: content-box;
+    border: 1px solid white;
+}
+
+/* パンくずメニューのスタイル */
+.breadcrumbs {
+    padding-left: 1em;
+}
+
+.breadcrumbs__link {
+    color: #507fb5;
+}
+
+
+/* ボックスのスタイル */
+.normal-box {
+    padding: 1em;
+    margin: 0 2vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /* 汎用スタイルここまで */
 
 /* ----------------------
@@ -91,9 +122,311 @@
     transition: background 0.2s, color 0.2s;
 }
 
-.button-link img {
-    box-sizing: content-box;
+.button-link__img {
     width: 8em;
     margin-bottom: 1em;
-    border: 1px solid white;
+}
+
+/* ボタンここまで */
+
+/* ---------------------
+フォーム要素のスタイル
+---------------------- */
+
+/* セレクトボックスのスタイル */
+.wide-select-box {
+    width: 85vw;
+    margin: 5px auto;
+}
+
+/* アコーディオンメニューで、デフォルトの三角形がないもののスタイル */
+
+.no-button-summary {
+    /* display: list-item;以外を指定してデフォルトの三角形アイコンを消す */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.summary-icon {
+    margin-right: 1em;
+}
+
+.no-button-summary::-webkit-details-marker {
+    /* Safariで表示されるデフォルトの三角形アイコンを消す */
+    display: none;
+}
+
+/* アコーディオンの中身で、はみ出たものは非表示にする */
+.content {
+    overflow: hidden;
+}
+
+/* トグルボタンのスタイル */
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 3.5rem;
+    height: 1rem;
+    border-radius: 2rem;
+    margin-top: 0.3rem;
+    background-color: #999999;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.toggle-button.disabled {
+    background-color: #eeeeee;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #80afe8;
+}
+
+.toggle-button.disabled:has(:checked) {
+    background-color: #a1c8f8;
+}
+
+.toggle-button::after {
+    position: relative;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    background: #fff;
+    content: '';
+    transition: all .4s;
+}
+
+.toggle-button.disabled::after {
+    box-shadow: none;
+    background: #f2f2f2;
+}
+
+.toggle-button:has(:checked)::after {
+    left: 1.75rem;
+    background-color: #003f8c;
+}
+
+.toggle-button.disabled:has(:checked)::after {
+    background-color: #7ea5d4;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+/* ラジオボタンのデザイン */
+
+#num-words-radio div label {
+    cursor: pointer;
+    padding-left: 1.7em;
+    position: relative;
+}
+
+#num-words-radio div label::before,
+#num-words-radio div label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#num-words-radio div label::before {
+    background-color: #fff;
+    height: 1.2em;
+    width: 1.2em;
+    left: 0;
+}
+
+#num-words-radio div label::after {
+    opacity: 0;
+    height: 1em;
+    width: 1em;
+    left: calc(0.1em + 1px);
+}
+
+#num-words-radio div label:has(input:checked)::after {
+    opacity: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+}
+
+/* フォーム要素のスタイルここまで */
+
+/* ----------------------
+設定メニューのスタイル
+----------------------- */
+
+.setting {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.setting-menu {
+    border-bottom: 1px solid #cfcfcf;
+    padding: 10px 2vw;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-menu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 5em;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 1rem;
+}
+
+.num_change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.img_checkbox input[type=radio] {
+    display: none;
+}
+
+.img_checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox_content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1vw;
+    margin-bottom: 10px;
+    padding: 1em;
+    height: calc(7vw + 2em + 30px);
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    font-size: min(2vw, 1em);
+    text-align: center;
+}
+
+.checkbox_content_selected {
+    border: 4px solid #e21203;
+}
+
+.checkbox_content img {
+    height: 3vw;
+    margin: 10px 0;
+}
+
+.checkbox_circle {
+    width: 1.3em;
+}
+
+.checkbox_area {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .checkbox_area {
+        flex-direction: column;
+    }
+
+    .img_checkbox {
+        margin: 10px 0;
+    }
+
+    .checkbox_content img {
+        height: 6vw;
+    }
+
+    .checkbox_content {
+        font-size: min(2.5vw, 1em);
+        padding: 4em 1.5em;
+    }
+}
+
+.bigger_img {
+    height: 4vw !important;
+}
+
+#num-words-radio div label::before {
+    border: 1px solid #003f8c;
+}
+
+#num-words-radio div label::after {
+    background-color: #003f8c;
+}
+
+.num-words-menu {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+#section-num-words {
+    flex-direction: column;
+}
+
+#num-words-radio {
+    justify-content: space-between;
+}
+
+#num_text_box {
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+#num_text_box.hide {
+    display: none;
+}
+
+/* 設定メニューのスタイルここまで */
+
+/* ----------------------
+スタートボタンのスタイル
+----------------------- */
+
+.start-button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.start-button-container {
+    width: 100%;
+    padding: 30px 5vw 1rem;
+    background: linear-gradient(to top, white, 95%, #00000000);
+    position: sticky;
+    bottom: 0;
 }

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url(./color-setting.css);
+
+/* ----------------
+ヘッダーのスタイル
+------------------- */
+
+.header {
+    background-color: var(--rapid-inter-theme);
+    color: white;
+}
+
+.start-button {
+    color: white;
+    background-color: var(--rapid-inter-theme);
+}
+
+@media (hover: hover) {
+    .start-button:hover {
+        background-color: var(--rapid-inter-theme-hover);
+    }
+}
