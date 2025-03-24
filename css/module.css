@@ -105,6 +105,13 @@
     border-radius: 10px;
 }
 
+.small-padding-box {
+    padding: 0.5em 1em;
+    margin: 0 2vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /* 汎用スタイルここまで */
 
 /* ----------------------
@@ -274,11 +281,6 @@
 /* ----------------------
 設定メニューのスタイル
 ----------------------- */
-
-.setting {
-    width: 90vw;
-    margin: 0 auto;
-}
 
 .setting-menu {
     border-bottom: 1px solid #cfcfcf;

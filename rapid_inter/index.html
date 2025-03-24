@@ -79,136 +79,128 @@
         </div>
 
         <h2 class="normal-h2">形式</h2>
-        <div class="normal-box">
-            <div class="setting">
-                <div class="setting-menu menu-content" id="section-num-words">
-                    <div id="num-words-radio">
-                        <label>単語数</label>
-                        <div>
-                            <label for="all-words" class="num-words-menu">
-                                <input type="radio" class="visually-hidden" id="all-words" name="num-words-radio"
-                                    checked="checked" value="all">すべて
-                            </label>
-                            <label for="custom-words" class="num-words-menu">
-                                <input type="radio" class="visually-hidden" id="custom-words" name="num-words-radio"
-                                    value="custom">カスタム
-                            </label>
-                        </div>
-                    </div>
-                    <div id="num_text_box" class="hide">
-                        <button id="num_remove" class="num_change" disabled><img
-                                src="../images/symbols/remove.svg"></button>
-                        <input type="number" id="num-words" name="num-words" value="10" min="1" disabled>
-                        <button id="num_add" class="num_change" disabled><img src="../images/symbols/add.svg"></button>
+        <div class="small-padding-box">
+            <div class="setting-menu menu-content" id="section-num-words">
+                <div id="num-words-radio">
+                    <label>単語数</label>
+                    <div>
+                        <label for="all-words" class="num-words-menu">
+                            <input type="radio" class="visually-hidden" id="all-words" name="num-words-radio"
+                                checked="checked" value="all">すべて
+                        </label>
+                        <label for="custom-words" class="num-words-menu">
+                            <input type="radio" class="visually-hidden" id="custom-words" name="num-words-radio"
+                                value="custom">カスタム
+                        </label>
                     </div>
                 </div>
-                <div class="setting-menu">
-                    <label for="type">タイプ</label>
-                    <div class="checkbox_area">
-                        <div>
-                            <label for="check_s_en_ja" class="img_checkbox">
-                                <input type="radio" id="check_s_en_ja" name="type" checked="checked" value="0">
-                                <div class="checkbox_content checkbox_content_selected"><img
-                                        src="../images/symbols/s_enja.png" alt="音声から英語と日本語">小テスト形式</div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                            <label for="check_en_ja" class="img_checkbox">
-                                <input type="radio" id="check_en_ja" name="type" value="1">
-                                <div class="checkbox_content"><img src="../images/symbols/en_ja.png"
-                                        alt="英語から日本語">英&rarr;日
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                            <label for="check_ja_en" class="img_checkbox">
-                                <input type="radio" id="check_ja_en" name="type" value="2">
-                                <div class="checkbox_content"><img src="../images/symbols/ja_en.png"
-                                        alt="日本語から英語">日&rarr;英
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                        </div>
-                        <div>
-                            <label for="check_s_en" class="img_checkbox">
-                                <input type="radio" id="check_s_en" name="type" value="3">
-                                <div class="checkbox_content"><img src="../images/symbols/s_en.png"
-                                        alt="音声から英語">リスニング&rarr;スペル
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                            <label for="check_s_ja" class="img_checkbox">
-                                <input type="radio" id="check_s_ja" name="type" value="4">
-                                <div class="checkbox_content"><img src="../images/symbols/s_ja.png"
-                                        alt="音声から日本語">リスニング&rarr;意味
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                        </div>
+                <div id="num_text_box" class="hide">
+                    <button id="num_remove" class="num_change" disabled><img
+                            src="../images/symbols/remove.svg"></button>
+                    <input type="number" id="num-words" name="num-words" value="10" min="1" disabled>
+                    <button id="num_add" class="num_change" disabled><img src="../images/symbols/add.svg"></button>
+                </div>
+            </div>
+            <div class="setting-menu">
+                <label for="type">タイプ</label>
+                <div class="checkbox_area">
+                    <div>
+                        <label for="check_s_en_ja" class="img_checkbox">
+                            <input type="radio" id="check_s_en_ja" name="type" checked="checked" value="0">
+                            <div class="checkbox_content checkbox_content_selected"><img
+                                    src="../images/symbols/s_enja.png" alt="音声から英語と日本語">小テスト形式</div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                        <label for="check_en_ja" class="img_checkbox">
+                            <input type="radio" id="check_en_ja" name="type" value="1">
+                            <div class="checkbox_content"><img src="../images/symbols/en_ja.png" alt="英語から日本語">英&rarr;日
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                        <label for="check_ja_en" class="img_checkbox">
+                            <input type="radio" id="check_ja_en" name="type" value="2">
+                            <div class="checkbox_content"><img src="../images/symbols/ja_en.png" alt="日本語から英語">日&rarr;英
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="check_s_en" class="img_checkbox">
+                            <input type="radio" id="check_s_en" name="type" value="3">
+                            <div class="checkbox_content"><img src="../images/symbols/s_en.png"
+                                    alt="音声から英語">リスニング&rarr;スペル
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                        <label for="check_s_ja" class="img_checkbox">
+                            <input type="radio" id="check_s_ja" name="type" value="4">
+                            <div class="checkbox_content"><img src="../images/symbols/s_ja.png"
+                                    alt="音声から日本語">リスニング&rarr;意味
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
                     </div>
                 </div>
-                <div class="setting-menu">
-                    <label for="method">答え方</label>
-                    <div class="checkbox_area">
-                        <div>
-                            <label for="input" class="img_checkbox">
-                                <input type="radio" id="input" name="method" checked="checked" value="0">
-                                <div class="checkbox_content checkbox_content_selected"><img
-                                        src="../images/symbols/keyboard.svg" class="bigger_img" alt="テキストボックス">テキストボックス
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                            <label for="four" class="img_checkbox">
-                                <input type="radio" id="four" name="method" value="1">
-                                <div class="checkbox_content">
-                                    <img src="../images/symbols/four.png" class="bigger_img" alt="4択クイズ">
-                                    4択クイズ
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                            <label for="sort" class="img_checkbox">
-                                <input type="radio" id="sort" name="method" value="2">
-                                <div class="checkbox_content"><img src="../images/symbols/sort.svg" class="bigger_img"
-                                        alt="並び替え">並び替え
-                                </div>
-                                <div class="checkbox_wrapper">
-                                    <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
-                                </div>
-                            </label>
-                        </div>
+            </div>
+            <div class="setting-menu">
+                <label for="method">答え方</label>
+                <div class="checkbox_area">
+                    <div>
+                        <label for="input" class="img_checkbox">
+                            <input type="radio" id="input" name="method" checked="checked" value="0">
+                            <div class="checkbox_content checkbox_content_selected"><img
+                                    src="../images/symbols/keyboard.svg" class="bigger_img" alt="テキストボックス">テキストボックス
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                        <label for="four" class="img_checkbox">
+                            <input type="radio" id="four" name="method" value="1">
+                            <div class="checkbox_content">
+                                <img src="../images/symbols/four.png" class="bigger_img" alt="4択クイズ">
+                                4択クイズ
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
+                        <label for="sort" class="img_checkbox">
+                            <input type="radio" id="sort" name="method" value="2">
+                            <div class="checkbox_content"><img src="../images/symbols/sort.svg" class="bigger_img"
+                                    alt="並び替え">並び替え
+                            </div>
+                            <div class="checkbox_wrapper">
+                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                            </div>
+                        </label>
                     </div>
                 </div>
-                <div class="setting-menu menu-content">
-                    <label for="random">
-                        シャッフル
-                    </label>
-                    <label class="toggle-button">
-                        <input type="checkbox" id="random" name="random" checked></label>
-                </div>
-                <div class="setting-menu menu-content">
-                    <label for="hide">
-                        選択肢を隠す
-                    </label>
-                    <label class="toggle-button disabled">
-                        <input type="checkbox" id="hide" name="hide" disabled></label>
-                </div>
-                <div class="setting-menu menu-content">
-                    <label for="sound">音声</label>
-                    <label class="toggle-button disabled">
-                        <input type="checkbox" id="sound" name="sound" checked disabled></label>
-                </div>
+            </div>
+            <div class="setting-menu menu-content">
+                <label for="random">シャッフル</label>
+                <label class="toggle-button">
+                    <input type="checkbox" id="random" name="random" checked></label>
+            </div>
+            <div class="setting-menu menu-content">
+                <label for="hide">選択肢を隠す</label>
+                <label class="toggle-button disabled">
+                    <input type="checkbox" id="hide" name="hide" disabled></label>
+            </div>
+            <div class="setting-menu menu-content">
+                <label for="sound">音声</label>
+                <label class="toggle-button disabled">
+                    <input type="checkbox" id="sound" name="sound" checked disabled></label>
             </div>
         </div>
     </main>
