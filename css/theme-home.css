@@ -30,6 +30,15 @@
     border: 3px solid var(--classical-japanese-theme);
 }
 
+
+.button-link.key_point {
+    border: 3px solid var(--key_point-theme);
+}
+
+.button-link.modern_literature {
+    border: 3px solid var(--modern_literature-theme);
+}
+
 /* ホバー機能があるデバイスの場合のみ、hoverスタイルを適用する */
 @media (hover: hover) {
     .button-link.rapid_inter:hover {
@@ -48,6 +57,15 @@
 
     .button-link.classical_japanese:hover {
         background-color: var(--classical-japanese-theme);
+        color: white;
+    }
+
+    .button-link.key_point:hover {
+        background-color: var(--key_point-theme);
+    }
+
+    .button-link.button-link.modern_literature:hover {
+        background-color: var(--modern_literature-theme);
         color: white;
     }
 }
