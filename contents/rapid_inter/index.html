@@ -11,21 +11,21 @@
     <title>速読英単語 必修編 | 単語学習アプリ ボキャトレ</title>
 
     <!-- スタイルの読み込み -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/module.css">
-    <link rel="stylesheet" href="../css/state.css">
-    <link rel="stylesheet" href="../css/theme-rapid_inter.css">
-    <meta http-equiv="default-style" content="../css/theme-rapid_inter.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/module.css">
+    <link rel="stylesheet" href="../../css/state.css">
+    <link rel="stylesheet" href="../../css/theme-rapid_inter.css">
+    <meta http-equiv="default-style" content="../../css/theme-rapid_inter.css">
 
     <!-- Android版Chromeなどで、URLバーの色を設定 -->
     <meta name="theme-color" content="#003f8c">
 
     <!-- Faviconの設定 -->
-    <link rel="apple-touch-icon" type="image/png" href="../images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="../images/icons/icon-192x192.png">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="icon" href="../favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" type="image/png" href="../../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../../images/icons/icon-192x192.png">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="../../favicon.ico" type="image/vnd.microsoft.icon">
 
     <meta name="author" content="Rio Gunawan">
     <meta name="description" content="ボキャトレの速読英単語・必修編のページです。ボキャトレは、速単・ターゲット英熟語・古文単語の単語をクイズ形式で覚えることができる非公式のサイトです。
@@ -43,15 +43,15 @@
 
 <body>
     <header class="l-header header">
-        <img src="../images/book_images/rapid_inter.jpg" alt=""
+        <img src="../../images/book_images/rapid_inter.jpg" alt=""
             class="header__img header__img-smaller white-border-img">
         <h1 class="l-header__title-container header__title-container"><span class="header__title">速読英単語 必修編</span></h1>
-        <img src="../images/icons/favicon.png" alt="アイコン" class="header__img header__img-smaller">
+        <img src="../../images/icons/favicon.png" alt="アイコン" class="header__img header__img-smaller">
     </header>
 
     <!-- パンくずメニュー -->
     <div class="breadcrumbs">
-        <a href="../" class="breadcrumbs__link">トップへ戻る</a>
+        <a href="../../" class="breadcrumbs__link">トップへ戻る</a>
     </div>
 
     <main>
@@ -66,7 +66,7 @@
             </div>
             <details class="js-details">
                 <summary id="select-range" class="js-summary no-button-summary">
-                    <img src="../images/symbols/add.svg" class="summary-icon">2つ以上の英文を選択する
+                    <img src="../../images/symbols/add.svg" class="summary-icon">2つ以上の英文を選択する
                 </summary>
                 <div class="content js-content">
                     <div class="select-box-container content_inner">
@@ -96,9 +96,9 @@
                 </div>
                 <div id="num_text_box" class="hide">
                     <button id="num_remove" class="num_change" disabled><img
-                            src="../images/symbols/remove.svg"></button>
+                            src="../../images/symbols/remove.svg"></button>
                     <input type="number" id="num-words" name="num-words" value="10" min="1" disabled>
-                    <button id="num_add" class="num_change" disabled><img src="../images/symbols/add.svg"></button>
+                    <button id="num_add" class="num_change" disabled><img src="../../images/symbols/add.svg"></button>
                 </div>
             </div>
             <div class="setting-menu">
@@ -108,45 +108,45 @@
                         <label for="check_s_en_ja" class="img_checkbox">
                             <input type="radio" id="check_s_en_ja" name="type" checked="checked" value="0">
                             <div class="checkbox_content checkbox_content_selected"><img
-                                    src="../images/symbols/s_enja.png" alt="音声から英語と日本語">小テスト形式</div>
+                                    src="../../images/symbols/s_enja.png" alt="音声から英語と日本語">小テスト形式</div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_filled.svg" class="checkbox_circle">
                             </div>
                         </label>
                         <label for="check_en_ja" class="img_checkbox">
                             <input type="radio" id="check_en_ja" name="type" value="1">
-                            <div class="checkbox_content"><img src="../images/symbols/en_ja.png" alt="英語から日本語">英&rarr;日
+                            <div class="checkbox_content"><img src="../../images/symbols/en_ja.png" alt="英語から日本語">英&rarr;日
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                         <label for="check_ja_en" class="img_checkbox">
                             <input type="radio" id="check_ja_en" name="type" value="2">
-                            <div class="checkbox_content"><img src="../images/symbols/ja_en.png" alt="日本語から英語">日&rarr;英
+                            <div class="checkbox_content"><img src="../../images/symbols/ja_en.png" alt="日本語から英語">日&rarr;英
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                     </div>
                     <div>
                         <label for="check_s_en" class="img_checkbox">
                             <input type="radio" id="check_s_en" name="type" value="3">
-                            <div class="checkbox_content"><img src="../images/symbols/s_en.png"
+                            <div class="checkbox_content"><img src="../../images/symbols/s_en.png"
                                     alt="音声から英語">リスニング&rarr;スペル
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                         <label for="check_s_ja" class="img_checkbox">
                             <input type="radio" id="check_s_ja" name="type" value="4">
-                            <div class="checkbox_content"><img src="../images/symbols/s_ja.png"
+                            <div class="checkbox_content"><img src="../../images/symbols/s_ja.png"
                                     alt="音声から日本語">リスニング&rarr;意味
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                     </div>
@@ -159,29 +159,29 @@
                         <label for="input" class="img_checkbox">
                             <input type="radio" id="input" name="method" checked="checked" value="0">
                             <div class="checkbox_content checkbox_content_selected"><img
-                                    src="../images/symbols/keyboard.svg" class="bigger_img" alt="テキストボックス">テキストボックス
+                                    src="../../images/symbols/keyboard.svg" class="bigger_img" alt="テキストボックス">テキストボックス
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_filled.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_filled.svg" class="checkbox_circle">
                             </div>
                         </label>
                         <label for="four" class="img_checkbox">
                             <input type="radio" id="four" name="method" value="1">
                             <div class="checkbox_content">
-                                <img src="../images/symbols/four.png" class="bigger_img" alt="4択クイズ">
+                                <img src="../../images/symbols/four.png" class="bigger_img" alt="4択クイズ">
                                 4択クイズ
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                         <label for="sort" class="img_checkbox">
                             <input type="radio" id="sort" name="method" value="2">
-                            <div class="checkbox_content"><img src="../images/symbols/sort.svg" class="bigger_img"
+                            <div class="checkbox_content"><img src="../../images/symbols/sort.svg" class="bigger_img"
                                     alt="並び替え">並び替え
                             </div>
                             <div class="checkbox_wrapper">
-                                <img src="../images/symbols/check_outline.svg" class="checkbox_circle">
+                                <img src="../../images/symbols/check_outline.svg" class="checkbox_circle">
                             </div>
                         </label>
                     </div>
@@ -222,9 +222,9 @@
     </div>
 
     <!-- jQueryとjavascriptの読み込み -->
-    <script src="../library/jquery-3.7.1.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/rapid-inter_menu.js"></script>
+    <script src="../../library/jquery-3.7.1.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/rapid-inter_menu.js"></script>
 </body>
 
 </html>
